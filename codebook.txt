@@ -1,0 +1,17 @@
+Variables within run_analysis.R, according to order of appearance:
+
+1. features: contains the data within features.txt, which would be the variables for the main tidy dataset. 561 rows x 1 column
+2. activities: contains the activity names contained in activity_labels.txt. 6 rows x 1 column
+3. xtest: contains the data within X_test.txt. 2947 rows x 561 columns
+4. ytest: contains the activity code for every row (observation) in xtest. 2947 rows x 1 column
+5. subjecttest: contains the subject code/subject ID for every row (observation) in xtest. 2947 rows x 1 column
+6. xtrain: contains the data within X_train.txt. 7352 rows x 561 columns
+7. ytrain: contains the activity code for every row (observation) in xtrain. 7352 rows x 1 column
+8. subjecttrain: contains the subject code/subject ID for every row (observation) in xtrain. 7352 rows x 1 column
+9. mergedset: a data frame that contains the merged data. 10299 rows x 563 columns
+10. meancolumns: column indices of the mergedset variable, for variables whose names contain "mean()". 33 values
+11. stdcolumns: column indices of the mergedset variable, for variables whose names contain "std()". 33 values
+12. meanstdcolumns: a concatenation of variable 10. and 11. 66 values
+13. tidyset: the first tidy data set, containing only variables that store mean & std. deviation values. 10299 rows x 68 columns
+14. activitylist: character variable containing activity names. 6 values
+15. secondTidy: second tidy data set, grouped by Subject ID and Activity, containing the mean for each variable in tidyset. 180 rows x 68 columns
